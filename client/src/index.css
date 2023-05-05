@@ -12,6 +12,13 @@ body {
     line-height: 1.6;
 }
 
+.loader-container {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media screen and (min-width: 658px) {
     body {
         font-size: 1rem;
