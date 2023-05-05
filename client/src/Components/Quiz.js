@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { quiz } from "../Datas/Question-data";
+import { useNavigate } from "react-router-dom";
 import "./Quiz.css";
 
 const Quiz = () => {
@@ -19,7 +20,7 @@ const Quiz = () => {
         correctAnswers: 0,
         wrongAnswers: 0,
     });
-
+    const navigate = useNavigate();
     const { questions } = quiz;
     const { question, choices, correctAnswer } = questions[displayedQuestion];
     const leading_zero = (number) => (number > 9 ? number : `0${number}`);
@@ -150,6 +151,13 @@ const Quiz = () => {
                             {timeTakenInMins}:{timeTakenInSecs}
                         </span>
                     </p>
+                    <button
+                        onClick={() => {
+                            navigate("/instructions");
+                        }}
+                    >
+                        Retry
+                    </button>
                 </div>
             )}
         </div>

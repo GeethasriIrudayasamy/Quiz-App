@@ -65,6 +65,10 @@ body {
     margin-top: 15px;
 }
 
+.quiz-container button:hover {
+    background: #9611bebd;
+}
+
 .quiz-container button:disabled {
     background: #e7e8e9;
     color: #868e99;
