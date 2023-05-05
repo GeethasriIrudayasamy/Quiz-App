@@ -1,0 +1,160 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 500;
+}
+.logo :hover {
+    color: #9611be;
+}
+
+.bd-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.home__container {
+    align-content: center;
+}
+
+.home__title {
+    font-size: 2.25rem;
+    text-align: center;
+    color: #9611be;
+    margin: 2rem 1.5rem 3rem 1.5rem;
+}
+
+.home__subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #393939;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.home__data {
+    display: grid;
+    place-items: center;
+}
+.button {
+    display: inline-block;
+    background-color: #9611be;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #9611bebd;
+}
+.home__img {
+    width: 100%;
+    justify-self: center;
+}
+
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.section-services {
+    padding: 3rem 0;
+}
+.section-services > h1 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+.heading {
+    justify-self: center;
+    margin-bottom: 3rem;
+}
+
+.feature {
+    display: grid;
+}
+
+ion-icon {
+    color: white;
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: #9611be;
+    margin-bottom: 0.6rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+    place-self: center;
+}
+
+.feature-title {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+    text-align: center;
+}
+
+.feature-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+@media screen and (min-width: 806px) {
+    .grid--4-cols {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 542px) and (max-width: 806px) {
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 861px) {
+    .home__container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 4rem;
+        justify-items: center;
+        margin-left: 5rem;
+    }
+
+    .home__img {
+        align-self: center;
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 412px) and (max-width: 861px) {
+    .home__img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 861px) {
+    .home__title,
+    .home__subtitle {
+        text-align: left;
+    }
+
+    .button {
+        justify-self: flex-start;
+        margin-left: 1.5em;
+    }
+}

@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-size: 0.838 rem;
+    font-family: "Nunito", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+        "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
+    background-color: #fbfefd;
+    color: #707070;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 658px) {
+    body {
+        font-size: 1rem;
+    }
+}
